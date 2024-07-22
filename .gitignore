@@ -1,0 +1,26 @@
+# Ignore virtual environment folders
+venv/
+env/
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore IDE and editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore log files
+*.log
+
+# Ignore package files
+*.egg-info/
+dist/
+build/
+
+.rasa
+actions/__pycache__
+rasa_env

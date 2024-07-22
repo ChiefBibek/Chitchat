@@ -1,0 +1,165 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: get_covid19_cases
+  examples: |
+    - How many cases of COVID-19 are in [Kathmandu](location)?
+    - What is the number of COVID-19 cases in [Nepal](location)?
+    - How many people have COVID-19 in [Karnali](location)?
+    - What is the count of COVID-19 cases in [New York](location)?
+    - How many cases are there in [Mumbai](location)?
+    - What is the number of cases in [China](location)?
+    - How many people have been infected in [USA](location)?
+    - What is the count of cases in [California](location)?
+
+- intent: get_covid19_symptoms  
+  examples: |
+    - What are the symptoms of COVID-19?
+    - What are the signs of COVID-19?
+    - How do I know if I have COVID-19?
+    - What are the symptoms of the coronavirus?
+    - What are the signs of the coronavirus?
+    - How do I know if I have the coronavirus?
+    - Can you tell me the symptoms of COVID-19?
+
+- intent: get_covid19_prevention  
+  examples: |
+    - How can I prevent COVID-19?
+    - How can I avoid getting COVID-19?
+    - What can I do to avoid COVID-19?
+    - How can I prevent the coronavirus?
+    - How can I avoid getting the coronavirus?
+    - What can I do to avoid the coronavirus?
+    - Can you tell me how to prevent COVID-19?
+
+- intent: get_covid19_treatment
+  examples: |
+    - How is COVID-19 treated?
+    - What are the treatments for COVID-19?
+    - How do you treat COVID-19?
+    - How is the coronavirus treated?
+    - What are the treatments for the coronavirus?
+    - How do you treat the coronavirus?
+    - Can you tell me how COVID-19 is treated?
+
+- intent: get_covid19_vaccine
+  examples: |
+    - Is there a vaccine for COVID-19?
+    - When will the COVID-19 vaccine be available?
+    - Do we have a vaccine for COVID-19?
+    - Is there a vaccine for the coronavirus?
+    - When will the coronavirus vaccine be available?
+    - Do we have a vaccine for the coronavirus?
+    - Can you tell me about the COVID-19 vaccine?
+
+- intent: get_covid19_deaths
+  examples: |
+    - How many people have died from COVID-19 in [Kathmandu](location)?
+    - What is the number of COVID-19 deaths in [Nepal](location)?
+    - How many people have died from COVID-19 in [Karnali](location)?
+    - What is the count of COVID-19 deaths in [New York](location)?
+    - How many deaths are there in [Mumbai](location)?
+    - What is the number of deaths in [China](location)?
+    - How many people have died in [USA](location)?
+    - What is the count of deaths in [California](location)?
+
+- intent: get_covid19_tests
+  examples: |
+    - How many COVID-19 tests have been conducted in [Kathmandu](location)?
+    - What is the number of COVID-19 tests in [Nepal](location)?
+    - How many tests have been conducted in [Karnali](location)?
+    - What is the count of COVID-19 tests in [New York](location)?
+    - How many tests have been conducted in [Mumbai](location)?
+    - What is the number of tests in [China](location)?
+    - How many tests have been conducted in [USA](location)?
+    - What is the count of tests in [California](location)?

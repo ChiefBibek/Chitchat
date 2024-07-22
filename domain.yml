@@ -1,0 +1,116 @@
+version: "3.1"
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - get_covid19_cases
+  - get_covid19_symptoms
+  - get_covid19_prevention
+  - get_covid19_treatment
+  - get_covid19_vaccine
+  - get_covid19_deaths
+  - get_covid19_tests
+
+entities:
+  - location
+
+slots:
+  cases:
+    type: text
+    mappings: []
+
+  location:
+    type: text
+    mappings: []
+  
+  deaths:
+    type: text
+    mappings: []
+  
+  tests:
+    type: text
+    mappings: []
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+    - text: "Hello! How can I help you today?"
+    - text: "Hi! How can I assist you today?"
+    - text: "Hey! How can I help you today?"
+    - text: "Hello! How are you doing today?"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Goodbye! , stay safe."
+    - text: "Bye! , stay safe."
+    - text: "Goodbye! , take care."
+    - text: "Bye! , take care."
+    - text: "Goodbye! , stay healthy."
+    - text: "Bye! , stay healthy."
+
+  utter_iamabot:
+    - text: "I am Chitchat a bot, powered by Rasa for covid-19 FAQ."
+    - text: "I am a bot Chitchat, powered by Rasa for covid-19 FAQ."
+
+  utter_cases:
+    - text: "As of now, there are {cases} cases of COVID-19 in {location}."
+    - text: "There are {cases} cases of COVID-19 in {location}."
+    - text: "The number of COVID-19 cases in {location} is {cases}."
+    - text: "The count of COVID-19 cases in {location} is {cases}."
+    - text: "There are {cases} people infected with COVID-19 in {location}."
+    - text: "The number of people infected with COVID-19 in {location} is {cases}."
+
+  utter_covid19_symptoms:
+    - text: "The symptoms of COVID-19 are fever, cough, and shortness of breath."
+    - text: "The signs of COVID-19 are fever, cough, and shortness of breath."
+    - text: "You may have COVID-19 if you have fever, cough, and shortness of breath."
+    - text: "The symptoms of the coronavirus are fever, cough, and shortness of breath."
+    - text: "The signs of the coronavirus are fever, cough, and shortness of breath."
+
+  utter_covid19_prevention:
+    - text: "To prevent COVID-19, you should avoid contact with sick people, wash your hands often, and wear a mask."
+    - text: "To avoid getting COVID-19, you should avoid contact with sick people, wash your hands often, and wear a mask."
+    - text: "To avoid COVID-19, you should avoid contact with sick people, wash your hands often, and wear a mask."
+    - text: "To prevent the coronavirus, you should avoid contact with sick people, wash your hands often, and wear a mask."
+
+  utter_covid19_treatment:
+    - text: "Treatment includes supportive care to help relieve symptoms and vaccination."
+    - text: "The main treatments for COVID-19 are supportive care to relieve symptoms and vaccines to prevent severe illness."
+    - text: "For COVID-19, treatments involve supportive care and vaccinations to manage symptoms and prevent severe disease."
+    - text: "Supportive care and vaccination are the primary treatments for COVID-19 to help alleviate symptoms and prevent complications."
+
+  utter_covid19_vaccine:
+    - text: "Vaccines are now available for COVID-19."
+    - text: "The COVID-19 vaccine is now available."
+    - text: "There is a vaccine for COVID-19."
+    - text: "The coronavirus vaccine is now available."
+
+  utter_covid19_deaths:
+    - text: "As of now, there are {deaths} deaths due to COVID-19 in {location}."
+    - text: "There are {deaths} deaths due to COVID-19 in {location}."
+    - text: "The number of deaths due to COVID-19 in {location} is {deaths}."
+    - text: "The count of deaths due to COVID-19 in {location} is {deaths}."
+    - text: "There are {deaths} people who have died from COVID-19 in {location}."
+
+  utter_covid19_tests:
+    - text: "As of now, there are {tests} tests conducted in {location}."
+    - text: "There are {tests} tests conducted in {location}."
+    - text: "The number of tests conducted in {location} is {tests}."
+    - text: "The count of tests conducted in {location} is {tests}."
+
+    
+actions:
+  - action_covid_info
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
